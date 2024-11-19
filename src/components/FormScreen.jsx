@@ -47,7 +47,7 @@ function FormScreen() {
   return (
     <div>
       <h1>
-        Registre em uma palavra o orgulho de integrar este grande time que é o
+        Registre em uma palavra o sentimento de integrar este grande time que é o
         coração pedagógico da educação de Joinville
       </h1>
       <form onSubmit={handleSubmit}>

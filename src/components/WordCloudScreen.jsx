@@ -34,7 +34,7 @@ function WordCloudScreen() {
 
   // Configuração do layout da nuvem
   const layout = cloud()
-    .size([800, 400])
+    .size(window.innerWidth <= 768 ? [300, 400] : [1000, 800])
     .words(words)
     .padding(5)
     .rotate(() => (~~(Math.random() * 2) * 90))

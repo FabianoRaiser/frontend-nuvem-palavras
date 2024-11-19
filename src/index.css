@@ -5,7 +5,13 @@
 
   color-scheme: light;
   color: #1a1a1a;
-  background-color: #fffbee;
+  background-color: #fffcf3;
+  background-image: url('./assets/fundo_tela_desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  height: 90vh;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,6 +19,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (max-width: 768px) {
+  :root {
+    height: 100vh;
+    background-image: url('./assets/fundo_tela_mobile.jpg');
+  }
+}
 a {
   font-weight: 500;
   color: #646cff;
