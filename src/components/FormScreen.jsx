@@ -44,6 +44,11 @@ function FormScreen() {
     }
   };
 
+  const handleInputChange = (e) => {
+    const value = e.target.value.trimEnd();
+    setInputValue(value);
+  };
+
   return (
     <div>
       <h1>
@@ -54,7 +59,7 @@ function FormScreen() {
         <input
           type="text"
           value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
+          onChange={(e) => handleInputChange(e)}
           placeholder="Palavra"
           disabled={loading}
         />
